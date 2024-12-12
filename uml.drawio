@@ -1,9 +1,93 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.3">
   <diagram name="第 1 页" id="D1RkH_1PDY5Is-bk3hLf">
-    <mxGraphModel>
+    <mxGraphModel dx="843" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-2" value="输入学号和密码" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="30" width="172" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-3" value="验证学号和密码是否正确" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="311.25" y="128" width="229.5" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-4" value="检查是否挂失" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="515.25" y="500" width="146" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-5" value="返回登录菜单" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="58.25" y="378.5" width="253" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-7" value="登录成功，显示学生操作菜单" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="574" y="720" width="253" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-10" value="提示联系管理员解挂，下次登录再判断" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="220" y="786" width="253" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-11" value="" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-2" target="WlJbVpX8Xlw09hIAKIid-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-12" value="错误" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-3" target="WlJbVpX8Xlw09hIAKIid-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="426" y="320" />
+              <mxPoint x="185" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-13" value="已挂失" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="337" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="588" y="680" />
+              <mxPoint x="337" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-14" value="未挂失" style="startArrow=none;endArrow=block;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-4" target="WlJbVpX8Xlw09hIAKIid-7">
+          <mxGeometry x="0.3201" relative="1" as="geometry">
+            <mxPoint x="564" y="238" as="sourcePoint" />
+            <mxPoint x="685.9100000000003" y="619" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="588" y="680" />
+              <mxPoint x="696" y="680" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-16" value="否" style="startArrow=none;endArrow=block;exitX=0;exitY=0.5;rounded=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-10" target="WlJbVpX8Xlw09hIAKIid-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="704" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-18" value="是" style="startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.5;entryY=1;rounded=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-10" target="WlJbVpX8Xlw09hIAKIid-7">
+          <mxGeometry x="-0.1946" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="417" y="999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-20" value="成功" style="startArrow=none;endArrow=block;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-3" target="WlJbVpX8Xlw09hIAKIid-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1059" y="419" as="sourcePoint" />
+            <mxPoint x="752" y="659" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="426" y="320" />
+              <mxPoint x="588" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-23" target="WlJbVpX8Xlw09hIAKIid-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="WlJbVpX8Xlw09hIAKIid-23" target="WlJbVpX8Xlw09hIAKIid-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-26" value="未审核" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="WlJbVpX8Xlw09hIAKIid-25">
+          <mxGeometry x="-0.0861" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlJbVpX8Xlw09hIAKIid-23" value="检查是否刚注册，管理员还未审核" style="rhombus;strokeWidth=2;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="520" y="360" width="136.5" height="103" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
